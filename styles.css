@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #ff636b;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.text-center {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin: 100px auto;
+  max-width: 800px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: rgb(255, 255, 255);
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+  font-family: "Ubuntu Sans", sans-serif;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.container1 {
+  background-color: rgba(249, 184, 166, 0.168);
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; /* Set a maximum width to prevent content from stretching too wide on larger screens */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for screens smaller than 600px */
+  .container1 {
+    max-width: 100%; /* Allow the container to occupy the full width of the viewport */
+    padding: 0 20px; /* Add some padding to the container to improve readability on smaller screens */
+  }
+}
